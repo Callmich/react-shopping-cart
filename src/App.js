@@ -12,7 +12,9 @@ function App() {
 	const [cart, setCart] = useState([]);
 
 	const addItem = item => {
-		// add the given item to the cart
+		console.log("before add", cart);
+		setCart([...cart, item]);
+		console.log("after add",cart);
 	};
 
 	return (
